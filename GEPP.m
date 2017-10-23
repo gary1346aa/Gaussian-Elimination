@@ -1,4 +1,4 @@
-function [G,x] = GEP(A,y);
+function [G,x] = GEPP(A,y);
 
     [row,~] = size(A);
     G = [A,y];
