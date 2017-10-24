@@ -1,4 +1,4 @@
-function [G,x] = GE(A,y);   %Gaussian Elimination with no pivoting
+function [G,x] = GE(A,y)   %Gaussian Elimination with no pivoting
 
     [row,~] = size(A);
     G = [A,y];

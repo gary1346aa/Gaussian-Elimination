@@ -1,4 +1,4 @@
-function [x] = FS(u,b); %Forward substitution in column order
+function [x] = FS(u,b) %Forward substitution in column order
 
 
     [n,~] = size(u);

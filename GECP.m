@@ -1,4 +1,4 @@
-function [G,x] = GECP(A,y); %Gaussain Elimination with complete pivoting
+function [G,x] = GECP(A,y) %Gaussain Elimination with complete pivoting
 
     [row,~] = size(A);
     G = [A,y];

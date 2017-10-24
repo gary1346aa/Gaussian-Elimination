@@ -1,4 +1,4 @@
-function [G,x] = GERP(A,y); %Gaussain Elimination with Rook's pivoting
+function [G,x] = GERP(A,y) %Gaussain Elimination with Rook's pivoting
 
     [row,~] = size(A);
     G = [A,y];
