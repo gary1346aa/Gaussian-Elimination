@@ -1,4 +1,4 @@
-function [G,x] = GEPP(A,y);
+function [G,x] = GEPP(A,y);  %Gaussian Elimination with partial pivoting
 
     [row,~] = size(A);
     G = [A,y];

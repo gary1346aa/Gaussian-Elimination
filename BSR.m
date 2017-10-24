@@ -1,4 +1,4 @@
-function [x] = BSR(u,b);
+function [x] = BSR(u,b); %Back substitution in row order
 
 
     [n,~] = size(u);

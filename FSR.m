@@ -1,4 +1,4 @@
-function [x] = FSR(u,b);
+function [x] = FSR(u,b); %Forward substitution in row order
 
 
     [n,~] = size(u);

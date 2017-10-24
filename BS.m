@@ -1,4 +1,4 @@
-function [x] = BS(u,b);
+function [x] = BS(u,b); %Back substitution in column order
 
 
     [n,~] = size(u);
