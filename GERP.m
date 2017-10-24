@@ -28,5 +28,5 @@ function [G,x] = GERP(A,y);
         end
         x(index(i),1) = (G(i,end) - S)/G(i,i);
     end
-    
+
 end
