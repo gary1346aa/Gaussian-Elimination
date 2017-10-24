@@ -4,7 +4,7 @@ A = rand(size,size);
 L = tril(A);
 U = triu(A);
 b(1:size,1) = (-1).^(0:size-1);
-%%
+
 
 %% Substitution Simulation
 tic 
@@ -26,6 +26,6 @@ tic
 xfsr = FSR(L,b); %Forward Substitution in Row order
 toc
 t4 = toc;
-%%
+
 
 Performance = [t1,t2,t3,t4];
