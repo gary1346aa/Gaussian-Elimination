@@ -1,15 +1,15 @@
 format long
 %% Random Matrix Genration 
-size = 100;
-A = rand(size,size);
-answer(1:size,1) = (-1).^(0:size-1);
-y = A*answer;
+% size = 1200;
+% A = rand(size,size);
+% answer(1:size,1) = (-1).^(0:size-1);
+% y = A*answer;
 
 
 %% GECP >>> GEPP example 
-% A = [1 0 0 0 1; -1 1 0 0 1;-1 -1 1 0 1; -1 -1 -1 1 1;-1 -1 -1 -1 1];
-% answer = [1/7 ;-2/7 ;3/7; -4/7; 5/7];
-% y = A*answer;
+A = [1 0 0 0 1; -1 1 0 0 1;-1 -1 1 0 1; -1 -1 -1 1 1;-1 -1 -1 -1 1];
+answer = [0.1 ;-0.1 ;0.1; -0.1; 0.1];
+y = A*answer;
 
 
 %% Algorithm Simulation

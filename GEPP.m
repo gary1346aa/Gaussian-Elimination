@@ -7,7 +7,7 @@ function [G,x] = GEPP(A,y)  %Gaussian Elimination with partial pivoting
     
     for j = 1 : row - 1
         R = G(j:end,j);
-        [~,max_index] = max(R);
+        [~,max_index] = max(abs(R));
         G([j,max_index + j - 1],:) = G([max_index + j - 1,j],:);
         for i = j + 1 : row
             G(i,:) = G(i,:) - (G(i,j)/G(j,j)).*G(j,:);

@@ -7,7 +7,7 @@ function [G,x] = GECP(A,y) %Gaussain Elimination with complete pivoting
     
     for j = 1 : row - 1
         R = G(j:end,j:end-1);
-        [~,I] = max(R(:));
+        [~,I] = max(abs(R(:)));
         [max_row, max_col] = ind2sub(size(R),I);
         G([j,max_row + j - 1],:) = G([max_row + j - 1,j],:);
         G(:,[j,max_col + j - 1]) = G(:,[max_col + j - 1,j]);
